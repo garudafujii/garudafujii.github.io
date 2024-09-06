@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+	<head>
+		
+		<!-- Google tag (gtag.js) -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=G-HVNGMYQK42"></script>
+		<script>
+		  window.dataLayer = window.dataLayer || [];
+		  function gtag(){dataLayer.push(arguments);}
+		  gtag('js', new Date());
+		
+		  gtag('config', 'G-HVNGMYQK42');
+		</script>
+		
+		<meta http-equiv="Content-Type" content="text/html; charset=shift_jis">
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+		<title>Garuda Fujii | Shinshu University</title>
+		<meta name="description" content="Simple Multi-Item Slider: Category slider with CSS animations" />
+		<meta name="keywords" content="topology optimization, topology optimisation, CMA-ES, level set method, invisible cloak" />
+		<meta name="author" content="Codrops" />
+		<link rel="shortcut icon" href="../favicon.ico"> 
+		
+		<link rel="stylesheet" type="text/css" href="../css/wide.css" />
+		<!--<link rel="stylesheet" media="(min-width: 640px)" type="text/css" href="../css/wide.css" />
+		<link rel="stylesheet" media="(max-width: 640px)" type="text/css" href="../css/smart.css" />-->
+		
+		<script src="../js/modernizr.custom.63321.js"></script>
+		
+		<script src="http://code.jquery.com/jquery-3.2.1.min.js"></script>
+	</head>
+	
+	<body oncontextmenu="return false;">
+		<script type="text/javascript">
+			var home = './index.html';
+			var publication = './publication.html';
+			var talk = './talk.html';
+			var media = './media.html';
+			var people = './people.html';
+			var grant = './grant.html';
+			var language = 'English';
+			var link = './topopt_en.html';
+			var fig = '../img/home/English.avif';
+		</script>
+<!--------------------------------------------------------------------------------------------------------------------------->
+		<script type="text/javascript" src="../js/header.js"></script>
+<!--------------------------------------------------------------------------------------------------------------------------->
+		
+		<div class="container">
+			
+			<div class="List_all">
+				<div class="Topic">
+				
+					<div class="top-info">
+						<nav>
+							<a href="#"><h4>トポロジー最適化について
+							</h4></a>
+						</nav>
+					</div>
+				
+					<div class="Left_column" style="font-size:80%;padding:1% 1% 1% 1%;line-height:180%;">
+						トポロジー最適化はコンピューター計算による解析に基づいた構造設計法であり，構造最適化の中でも最も設計自由度が高い方法です．
+						具体的には，構造の寸法や形状だけでなく，新しい孔（あな）の創出を含めた構造のトポロジーも変更することが可能となります．
+						そのため，他の構造最適化法では達成することが難しい高い性能やこれまでにない機能などを実現する構造の設計が可能となります．
+						<br>&emsp;
+						一方で，構造の自由度とは別にトポロジー最適化には各問題においてさまざまな難しさを含みます．
+						例えば，多くの局所的最適解が存在する多峰性，
+						設計変数が非常に多い問題において取り得る構造が指数関数的に増えることで最適解が得られない次元の呪い，
+						複数の設計変数の相対的な変化が目的関数に影響する依存性，などさまざまな問題が存在します．
+						<br>&emsp;
+						これらの問題を同時に解決することが可能なトポロジー最適化を構築することが目標です．
+					</div><!-- Left_column -->
+
+					<div class="Right_column" style="padding:1% 1% 1% 1%;">
+						<img class="FigLeft" width="100%;" src="../img/research/topopt.png">
+					</div><!--RightColumn-->
+				</div><!--Topic-->
+			
+				<div class="Topic">
+				
+					<div class="top-info">
+						<nav>
+							<a href="#"><h4>困難な性質を含むトポロジー最適化への挑戦
+							</h4></a>
+						</nav>
+					</div>
+				
+					<div class="Left_column" style="padding:1% 1% 1% 1%;display: inline-block;text-align:center;">
+						<img class="FigLeft" width="100%;" src="../img/research/CMA-ES/Rastrigin.png"><br><br><br>
+						<img class="FigLeft" width="80%;" src="../img/research/CMA-ES/CMAES_Rastrigin.gif">
+					</div><!-- Left_column -->
+
+					<div class="Right_column" style="font-size:80%;padding:1% 1% 1% 1%;line-height:180%;">
+						最適化問題は単純な凸関数から多くの局所的最適解をもつ多峰性関数までさまざまです．
+						トポロジー最適化においても最小化する目的関数や制約条件，対象としている物理場により，最適化問題の性質は大きく変化します．
+						<br>&emsp;
+						メタマテリアルやフォトニック・フォノニック結晶などの登場により昨今注目されている
+						電磁波や音波などの波動制御に関するトポロジー最適化問題は，
+						波動特有の散乱や干渉などにより，多峰性や設計変数間の依存性が強く，
+						一般に難しい構造設計問題となります．
+						このような困難な性質ゆえに未解決な最適化問題を解くことができるトポロジー最適化の開発を目指し研究を進めます．
+					</div><!--RightColumn-->
+				</div><!--Topic-->
+						
+				<div class="Topic">
+				
+					<div class="top-info">
+						<nav>
+							<a href="#"><h4>トポロジー最適化における構造モデリング：作りやすさと計算の高速化
+							</h4></a>
+						</nav>
+					</div>
+				
+					<div class="Left_column" style="font-size:80%;padding:1% 1% 1% 1%;line-height:180%;">
+						トポロジー最適化は設計の自由度が高いため，空間的に無限に小さな構造を作ることができる不適切問題であり，
+						それを解決するために様々な構造モデリングや帰化的な制約が提案されている．
+						<br>&emsp;
+						これらの各構造モデリングの方法により得られる最適化構造が異なることもあります．
+						また，最適化構造の輪郭周辺の明瞭さにより，製造の容易さが異なってきます．
+						<br>&emsp;
+						また，構造モデリングと空間の離散化（有限要素サイズ）を互いに独立させることにより，
+						高い計算精度と次元の低次元下を可能とすることで，計算の高速化なども達成することができます．
+					</div><!-- Left_column -->
+					
+					<div class="Right_column" style="padding:1% 1% 1% 1%;margin: 0% 0% 20% 0%;">
+						<img class="FigLeft" width="110%" src="../img/research/SLSM/spectralLSM.gif">
+						<img class="FigLeft" width="81%"  style="margin-left:2%;" src="../img/research/SLSM/density.gif">
+					</div><!--RightColumn-->
+				</div><!--Topic-->
+				
+			</div><!--List_all-->
+			
+		</div><!-- /container -->
+		
+		
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+		<script src="js/jquery.catslider.js"></script>
+		<script>
+			$(function() {
+
+				$( '#mi-slider' ).catslider();
+
+			});
+		</script>
+		
+		
+	</body>
+</html>

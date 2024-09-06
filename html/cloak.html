@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+	<head>
+		
+		<!-- Google tag (gtag.js) -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=G-HVNGMYQK42"></script>
+		<script>
+		  window.dataLayer = window.dataLayer || [];
+		  function gtag(){dataLayer.push(arguments);}
+		  gtag('js', new Date());
+		
+		  gtag('config', 'G-HVNGMYQK42');
+		</script>
+		
+		<meta http-equiv="Content-Type" content="text/html; charset=shift_jis">
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+		<title>Garuda Fujii | Shinshu University</title>
+		<meta name="description" content="Simple Multi-Item Slider: Category slider with CSS animations" />
+		<meta name="keywords" content="topology optimization, topology optimisation, CMA-ES, level set method, invisible cloak" />
+		<meta name="author" content="Codrops" />
+		<link rel="shortcut icon" href="../favicon.ico"> 
+		
+		<link rel="stylesheet" type="text/css" href="../css/wide.css" />
+		<!--<link rel="stylesheet" media="(min-width: 640px)" type="text/css" href="../css/wide.css" />
+		<link rel="stylesheet" media="(max-width: 640px)" type="text/css" href="../css/smart.css" />-->
+		
+		<script src="../js/modernizr.custom.63321.js"></script>
+		
+		<script src="http://code.jquery.com/jquery-3.2.1.min.js"></script>
+	</head>
+	
+	<body oncontextmenu="return false;">
+		<script type="text/javascript">
+			var home = './index.html';
+			var publication = './publication.html';
+			var talk = './talk.html';
+			var media = './media.html';
+			var people = './people.html';
+			var grant = './grant.html';
+			var language = 'English';
+			var link = './cloak_en.html';
+			var fig = '../img/home/English.avif';
+		</script>
+<!--------------------------------------------------------------------------------------------------------------------------->
+		<script type="text/javascript" src="../js/header.js"></script>
+<!--------------------------------------------------------------------------------------------------------------------------->
+		
+		<div class="container">
+			
+			<div class="List_all">
+				<div class="Topic">
+				
+					<div class="top-info">
+						<nav>
+							<a href="#"><h4>クローキング
+							</h4></a>
+						</nav>
+					</div>
+					
+					<div class="Left_column" style="font-size:80%;padding:1% 1% 1% 1%;line-height:180%;">
+						フォトニック結晶やメタマテリアルなど，光の波長サイズの構造体による光制御は近年最も盛んに研究が行われている分野の一つであり，
+						究極の光制御を目的とした先進的な光学デバイスが提案されています．その中の一つに光学迷彩，つまり光学クローキングを実現する
+						マイクロ・ナノ構造に関する研究が大きな注目を集めています．光学クローキングとは物体を何らかの構造で囲むことにより，
+						透明マントのごとく物体を不可視にする機能や現象のことです．
+						<br>&emsp;
+						光学クローキングは「物体を囲む構造により光の散乱を極限まで抑え，構造外の電磁場を変化させない」という
+						物理的な解釈をすることができます．
+						つまり，構造外への光散乱を極めて小さくする散乱キャンセレーションが可能な構造を設計することにより，光学クローキングは実現することが可能です．
+						<br>&emsp;
+						一方で，世界的に主流となっているメタマテリアルとTransformation 理論を用いたアプローチを持ってしても，十分な性能の
+						クローキングを実現することは容易ではありません．
+					</div><!-- Left_column -->
+
+					<div class="Right_column" style="padding:1% 1% 1% 1%;">
+						<img class="FigLeft" width="100%;" src="../img/research/cloak.png">
+					</div><!--RightColumn-->
+				</div><!--Topic-->
+			
+				<div class="Topic">
+				
+					<div class="top-info">
+						<nav>
+							<a href="#"><h4>トポロジー最適化による光学クロークの構造設計
+							</h4></a>
+						</nav>
+					</div>
+				
+					<div class="Left_column" style="padding:1% 1% 1% 1%;display: inline-block;text-align:center;">
+						<img class="FigLeft" width="48%;" src="../img/research/Optical_cloak/Optical_cloak.gif">
+						<img class="FigLeft" width="48%;" src="../img/research/Optical_cloak/EFD.gif">
+						<div class="caption" style="vertical-align:center;font-size:80%;line-height:180%;">
+						光学クロークのトポロジー最適化&emsp;(左：構造の変化，右：周りの電磁波)
+						</div>
+						<br><br><br>
+						<img class="FigLeft" width="80%;" src="../img/research/Optical_cloak/OF_optical_cloak.gif">
+						<div class="caption" style="vertical-align:center;font-size:80%;line-height:180%;">
+						トポロジー最適化による構造周辺の散乱（目的関数）の最小化
+						</div>
+					</div><!-- Left_column -->
+
+					<div class="Right_column" style="font-size:80%;padding:1% 1% 1% 1%;line-height:180%;">
+						光学クロークは透明マントのごとく物体を不可視化（透明化）することが可能な（メタ）デバイスであり，
+						物体による光散乱を限りなくゼロにすることで，まるで物体とデバイスが存在しないかのような電磁場を再現します．
+						<br>&emsp;
+						左から入射してきた光に対して，目的関数としてデバイス周りの光散乱強度を最小化することが可能となれば，
+						光学クロークの機能を達成することができます．
+						また，構造をレベルセット関数によりモデリングすることによって，誘電体の界面での光散乱を数値シミュレーションで再現し，
+						構造最適化にフィードバックすることで，光散乱強度を抑制する性能を改善していきます．
+						<br>&emsp;
+						トポロジー最適化により（逆）設計された光学クロークはそれがない系と比較して，散乱を1%未満まで低減することが可能となりました．
+						<br><br>
+						参考文献
+						<br><br>
+						G. Fujii, H. Watanabe, T. Yamada, T. Ueta, M. Mizuno, Level set based topology optimization for optical cloaks, 
+						Applied Physics Letters Vol. 102 (25), pp. 251106 (2013). 
+						<br><br>
+						G. Fujii and T. Ueta, Topology-optimized carpet cloaks based on a level-set boundary expression, 
+						Physical Review E Vol. 94 (4), pp. 043301 (2016)
+						<br><br>
+						G. Fujii, M. Takahashi, Y. Akimoto, 
+						CMA-ES-based structural topology optimization using a level set boundary expression&mdash;
+						Application to optical and carpet cloaks, 
+						Computer Methods in Applied Mechanics and Engineering Vol. 332, pp. 624&ndash;643 (2018).
+					</div><!--RightColumn-->
+				</div><!--Topic-->
+						
+				<div class="Topic">
+				
+					<div class="top-info">
+						<nav>
+							<a href="#"><h4>音波・熱伝導・電気伝導などにおけるクローキングとマルチフィジカル制御
+							</h4></a>
+						</nav>
+					</div>
+				
+					<div class="Left_column" style="font-size:80%;padding:1% 1% 1% 1%;line-height:180%;">
+						透明マント効果を実現する光学クロークは，物体による音響散乱を極小化する音響クローク，
+						断熱材による熱流束の乱れを極小化するサーマルクローク（熱クローク）など，
+						さまざまな物理現象におけるアナロジーが提案されています．
+						<br>&emsp;
+						当研究室では光学クロークのみならず，これらのアナロジーとしてのクローキングや，複数の物理現象においてマルチフィジカル制御を実現する
+						マルチフィジカルクロークなどのトポロジー最適化を試み，それらを達成してきました．
+						<br><br>
+						参考文献
+						<br><br>
+						G. Fujii, Y. Akimoto, M. Takahashi, Exploring optimal topology of thermal cloaks by CMA-ES, 
+						Applied Physics Letters Vol. 112 (6), pp. 061108 (2018).
+						<br><br>
+						G Fujii, M Takahashi, Y Akimoto, 
+						Acoustic cloak designed by topology optimization for acoustic&ndash;elastic coupled systems, 
+						Applied Physics Letters Vol. 118 (10), pp. 101102 (2021).
+						<br><br>
+						G. Fujii and Y. Akimoto, Topology-optimized thermal carpet cloak expressed 
+						by an immersed-boundary level-set method via a covariance matrix adaptation evolution strategy, 
+						International Journal of Heat and Mass Transfer Vol. 137, pp.1312&ndash;1322 (2019).
+						<br><br>
+						G. Fujii and Y. Akimoto, Optimizing the structural topology of bifunctional invisible cloak 
+						manipulating heat flux and direct current, Applied Physics Letters Vol.115 (17), pp.174101 (2019).
+						<br><br>
+						G. Fujii and Y. Akimoto, Electromagnetic-acoustic biphysical cloak designed through topology optimization, 
+						Optics Express Vol.30 (4), 6090&ndash;6106 (2022)
+					</div><!-- Left_column -->
+					
+					<div class="Right_column" style="padding:1% 1% 1% 1%;display: inline-block;text-align:center;">
+						<img class="FigLeft" width="40%;" src="../img/research/Thermal_cloak/OC_tau_1e-3.gif">
+						<img class="FigLeft" width="58%;" src="../img/research/Thermal_cloak/HF_tau_1e-3.gif">
+						<div class="caption" style="vertical-align:center;font-size:80%;line-height:180%;">
+						サーマルクロークのトポロジー最適化&emsp;&emsp;(左：構造の変化，右：熱流束)
+						</div>
+						<br>
+						<!--<img class="FigLeft" width="40%;" src="../img/research/bifunctionality/BiFC.gif">
+						
+						<img class="FigLeft" width="48%;" src="../img/research/bifunctionality/BiFC.gif">
+						<br>
+						<img class="FigLeft" width="48%;" src="../img/research/bifunctionality/BiFC.gif">
+						<img class="FigLeft" width="48%;" src="../img/research/bifunctionality/BiFC.gif">
+						<div class="caption" style="vertical-align:center;font-size:80%;line-height:180%;">
+						電磁波・音響マルチフィジカルクロークのトポロジー最適化<br>
+						(下段左：Ez偏光，中央：Hz偏光，右：音波)
+						</div>-->
+					</div><!--RightColumn-->
+				</div><!--Topic-->
+				
+				<div class="Topic">
+				
+					<div class="top-info">
+						<nav>
+							<a href="#"><h4>クローキング + もう一つの機能 を実現する多機能化
+							</h4></a>
+						</nav>
+					</div>
+				
+					<div class="Left_column" style="padding:1% 1% 1% 1%;display: inline-block;text-align:center;">
+						<img class="FigLeft" width="40%;" src="../img/research/Thermal_cloak_concentrator/C_tau_1e-3.gif">
+						<img class="FigLeft" width="58%;" src="../img/research/Thermal_cloak_concentrator/HF_tau_1e-3.gif">
+						<div class="caption" style="vertical-align:center;font-size:80%;line-height:180%;">
+						サーマルクロークコンセントレータのトポロジー最適化<br>
+						(左：構造，右：熱流束)
+						</div>
+					</div><!-- Left_column -->
+
+					<div class="Right_column" style="font-size:80%;padding:1% 1% 1% 1%;line-height:180%;margin:0% 0% 10% 0%;">
+						クローキングの応用として代表的なデバイスに``センサーをクロークする''ことにより測定する物理場に影響を与えないインビジブルセンサーがあります．
+						本来センシングにより測定したい物理場は，センサーの存在の影響を受け，実際に測定したい場とは異なる状態にあります．
+						このインビジブルセンサーを実現するためには，クローキングだけでなく内部に物理場をフォーカスする機能により，
+						はじめて，センシングが可能となります．
+						<br>&emsp;
+						本研究室ではこのような複数の機能を同時に実現するクローキングデバイスの多機能化をトポロジー最適化により設計します．
+						左図は熱伝導におけるクローキングと熱流束を中心の領域にフォーカスする（レンズのような）機能を同時に実現する構造のトポロジー最適化結果です．
+						外部の熱流束の乱れをできるだけ小さくしながらも，中心領域に熱流束が集中していることがわかります．
+						<br><br>
+						参考文献
+						<br><br>
+						G. Fujii and Y. Akimoto, Cloaking a concentrator in thermal conduction via topology optimization, 
+						International Journal of Heat and Mass Transfer Vol.159, pp.120082 (2020). 
+						<br><br>
+						G. Fujii and Y. Akimoto,  dc electric cloak concentrator via topology optimization, 
+						Physical Review E Vol.102 (3), pp.033308 (2020)
+						<br><br>
+						G. Fujii, Biphysical undetectable concentrators manipulating both heat flux and direct current 
+						via topology optimization, Physical Review E Vol.106 (6), pp.065304 (2022)
+					</div><!--RightColumn-->
+				</div><!--Topic-->
+				
+			</div><!--List_all-->
+			
+		</div><!-- /container -->
+		
+		
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+		<script src="js/jquery.catslider.js"></script>
+		<script>
+			$(function() {
+
+				$( '#mi-slider' ).catslider();
+
+			});
+		</script>
+		
+		
+	</body>
+</html>

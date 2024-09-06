@@ -1,0 +1,430 @@
+%=======================================================
+% This 'Thesis_format.tex' is a Tex format of theses 
+% for bachelor's and master's degrees. 
+% Written by Garuda FUJII at 18 Dec. 2014.
+%=======================================================
+
+%!TEX encoding = JISJapanese
+\documentclass[oneside,jarticle,14ptj]{./Style/FujiiLab}
+%\documentclass[a4paper,14ptj]{FujiiLab}
+%\documentclass[a4paper,12pt]{jsbook}
+%\documentclass[a4paper,12pt]{jreport}
+
+%========================================================
+% usepackages
+%========================================================
+% Mathmatical Equation
+\usepackage{amsmath}
+\usepackage[psamsfonts]{amssymb}
+\usepackage{bm}
+
+% Layout
+\usepackage{multicol}
+\usepackage{fancyhdr}
+
+% Figure
+\usepackage[dvips]{graphicx}
+\usepackage{wrapfig}
+\usepackage{subfigure}
+\graphicspath{{./Logo/}{./Figure/}}
+
+% Others
+% \usepackage{layout}
+\usepackage{url}
+
+
+
+
+%========================================================
+% Check thesis for teaching staff
+%========================================================
+\usepackage{color} % \textcolor{blue}{
+%\usepackage{ulem}% \sout{}
+
+%========================================================
+% page layout
+%========================================================
+\setlength{\textwidth}{138mm}
+\setlength{\textheight}{210mm}
+\setlength{\headsep}{18mm}
+\renewcommand\baselinestretch{1.02}
+
+\setlength{\topmargin}{-13mm}
+\setlength{\oddsidemargin}{5mm}
+
+%========================================================
+% Depth of table of contents
+% 1: section
+% 2: subsection (default)
+% 3: subsubsection
+%========================================================
+\setcounter{tocdepth}{2}
+
+%========================================================
+% header
+%========================================================
+%\usepackage{fancyhdr}
+%\pagestyle{fancy}
+%\lhead{}
+%\rhead{}
+%\rhead{\thepage{}}
+%\cfoot{}
+%\renewcommand{\headrulewidth}{0pt}
+
+%\pagestyle{fancy}
+%\fancyhead{}
+%\fancyhead[RO,RE]{\rightmark\ \ \ \ \ \ \ \ \ \ \thepage}
+%\fancyhead[LE,LO]{\leftmark}
+%\renewcommand{\chaptermark}[1]{\markboth{第\ \thechapter\ 章~#1}{}}
+%\renewcommand{\sectionmark}[1]{\markright{\thesection #1}{}}
+
+
+\begin{document}
+
+%========================================================
+% title page
+%========================================================
+
+\begin{titlepage}
+		\title{卒論・修論のタイトル}
+	\begin{center}
+		\begin{figure}[t]%[htbp]
+			\begin{center}
+				\includegraphics[width=3cm]{GAK-BL-000.eps}
+			\end{center}
+		\end{figure}
+		\vspace{10mm}
+		{\Large 平成３１年度（２０１９年度）}\\ 
+		\vspace{5mm}
+		{\Large 信州大学 工学部 機械システム工学科 卒業論文}\\ 
+		%{\Large 信州大学大学院 工学専攻 機械システム工学分野 修士学位論文}\\ 
+		\vspace*{20mm}
+		{\Huge\bf 卒論・修論のtexフォーマット}\\ % タイトル１行目
+		\vspace*{3mm}
+		{\Huge\bf H31作成}\\ % タイトル２行目
+		\vspace*{3mm}
+		{\Huge\bf 参考文献はbibtexを使用}\\ % タイトル３行目
+		%\vspace{10truept}
+		%{\Large ―サブタイトル―}\\ % サブタイトル（なければコメントアウト）
+		\vspace{20mm}
+		{\huge 藤井雅留太}\\ % 著者
+		\vspace{10mm}
+		{\large 平成30年3月}\\ % 提出日
+		\vspace{5mm}
+		{\large 信州大学 工学部 機械システム工学科}\\ % 所属
+		\vspace{5mm}
+		{\large 学籍番号 03TXXXXX}\\ % 学籍番号
+		\vspace{30truept}
+		{\large 指導教員（主査）：〇〇　〇〇　　教授 }\\ % 主査
+		\vspace{5truept}
+		{\large 指導教員（副査）：〇〇　〇〇　　教授 }\\ % 副査
+		\vspace{5truept}
+		{\large 指導教員（副査）：〇〇　〇〇　　教授 }\\ % 副査
+%		\begin{figure}[b]%[htbp]
+%			\begin{center}
+%				\includegraphics[width=3cm]{GAK-BL-001.eps}
+%				\includegraphics[width=3cm]{GAK-BL-002.eps}
+%				\includegraphics[width=3cm]{SET-J-001H.eps}
+%			\end{center}
+%		\end{figure}
+	\end{center}
+\end{titlepage}
+
+
+\begin{figure}[p]%[htbp]
+	\begin{center}
+		\includegraphics[width=5cm]{hoge_c.eps}
+		\caption{裏表紙には研究に関する図を挿れてもOK　その場合このcaptionは”$\%$”でコメントアウト}
+	\end{center}
+\end{figure}
+%==================================================
+%\chapter*{ }% 裏表紙
+%\thispagestyle{empty}% No page number
+%==================================================
+
+%==================================================
+\chapter*{概要}
+ \thispagestyle{empty} % No page number
+%==================================================
+
+本フォーマットは信州大学工学部環境機能工学科，藤井研究室の学生・院生が卒業論文および修士論文を書くために，
+藤井が作成したTexフォーマットである．%\sout{むしろ感謝してほしい．}
+
+フォントは10pt，右上にページ数を章タイトルが出るよう，編集した．
+適宜編集して，\textcolor{blue}{誤植とミスの無い}美しい卒業論文または修士論文を書いてほしい．
+
+更新履歴
+
+ver.1 2014-12-18 texで卒論書かせよう
+
+%ver.2 2015-1-15 \sout{卒論添削に耐えかねて、}作成\sout{（笑）}
+ver.2 2015-1-15 とりあえず作成
+
+ver.3 2015-3-4 添削用のtextcolor （文章のカラー化）とsout（添削用の消去線）を追加
+
+ver.4 2016-1-20 概要を最初に追加，参考文献の形式をIEEEtrans.bstに変更
+
+ver.5 2018-10-12 概要を最初に追加，参考文献の形式をjunsrt.bstに変更
+
+%==================================================
+\chapter*{謝辞}
+ \thispagestyle{empty} % No page number
+%==================================================
+
+感謝してくれ
+
+%==================================================
+% Reset page number
+%==================================================
+\setcounter{page}{0}
+
+%==================================================
+\tableofcontents %目次
+%==================================================
+
+%==================================================
+\chapter{緒言}\label{start}
+%==================================================
+\section{作成背景}\label{background}
+Texのインストールから実際に論文を書くところまで，できるだけ短時間で身につくよう，
+最低限の知識のみを書いた卒論・修論フォーマット形式のテキストである．
+むしろ若干足りないかもしれない．
+自分が知っている物理学の分野の著名な論文，例えば
+Physical Review Letters \cite{Yablonovitch_PRL_1987,Takeda_PRL_2004}，
+Applied Physics Letters \cite{Fujii_APL_2013}，
+Physical Review B \cite{Ohtaka_PRB_1979}，
+Optics Express\cite{Fujii_OE_2012}
+など様々な論文が存在しているが，それらの多くはこのTexで書かれ，
+多くの学会，論文で書式が配布されている．
+一般的に教科書\cite{Sakoda_Morikita_2004,Sigmund_Springer_2004}などもTexで書かれていることが多い
+（と藤井は思っているが，自分は書いたことがない）．
+
+もう，賢い学生は気づいているかもしれないが，この文章自体がすでにTexを使うための例文・フォーマットとなっている．
+式の書き方，図の挿入方法，参考文献など，簡単にTexを始められるようになっている（つもりである）．
+
+\subsection{構成}
+
+第\ref{start}章では本フォーマットの作成背景と作成目的について述べた．
+第\ref{how_to_install_Tex}章ではTexのインストール方法，
+第\ref{how_to_write_equation}章では式の記述方法，
+第\ref{how_to_insert_figures}章では図の挿入方法，
+第\ref{how_to_write_references}章では参考文献の書き方について記述している．
+
+
+\subsubsection{論文の構成}
+論文は，部：part，章：chapter，節：section，項（小節）:subsection，目（小々節）：subsubsection，で構成されている．
+本フォーマットでは章：chapterがからはじまり，目（小々節）：subsubsectionまで使用可能である．
+目次にはデフォルトではsectionまで表示されるが，本テンプレートの48行目あたりの
+\verb+\setcounter{tocdepth}{2}+の2を3にすればsubsectionまで表示できる．
+適宜，編集すること．
+
+\section{作成目的}
+教員の負担を減らしながらも，学生・院生が綺麗な卒論，修論を書く．
+
+%==================================================
+\chapter{Texのインストール}\label{how_to_install_Tex}
+%==================================================
+
+\section{Windowsの場合}
+美文書作成\cite{bibunsyoVer6_nihonhyouronsya_2013}に付属するCDからインストール
+
+\section{Macの場合}
+TexShop\cite{TexShop_URL}をインストール
+
+
+%==================================================
+\chapter{式の書き方}\label{how_to_write_equation}
+%==================================================
+
+Texでは学生の横着な仕事により，フォントがごちゃごちゃにならないことを意図してか，
+単純に書くだけではフォントが固定される．
+フォントをごちゃごちゃに混ぜる方が難しい．
+
+\section{とりあえず書いてみる}
+
+式を書くには
+\begin{verbatim}
+	\begin{equation}     \end{equation} 
+	or      \begin{align}     \end{align} 
+	or      \begin{eqnarray}     \end{eqnarray}
+\end{verbatim}
+のうちどれかで挟む．個人的にはalignがおすすめ．例えば，
+\begin{verbatim}
+\begin{align}
+     \nabla^2 E_{\rm s} +\frac{\omega^2}{c^2}\epsilon({\bf x})E_{\rm s}
+     &= -\frac{\omega^2}{c^2}[\epsilon({\bf x})-\epsilon_{\rm air}]E_{\rm i}, 
+     \label{Helmholtz}
+\end{align}
+\end{verbatim}
+と書くと
+\begin{align}
+     \nabla^2 E_{\rm s} +\frac{\omega^2}{c^2}\epsilon({\bf x})E_{\rm s}
+     &= -\frac{\omega^2}{c^2}[\epsilon({\bf x})-\epsilon_{\rm air}]E_{\rm i}, 
+     \label{Helmholtz}
+\end{align}
+と出力される．
+２つ以上の式を \verb+\begin{align}+〜\verb+\end{align}+に書く場合は揃えたい位置に \verb+&+ を入れ，
+１つ目の式の最後に\verb+\\+で改行してやる．
+
+式を引用する際は　式（\verb+\ref{Helmholtz}+）　と書くと　式（\ref{Helmholtz}）　と引用される．
+\verb+\ref{ }+のカッコの中は引用したい式の\verb+\label{ }+のカッコのなかと揃える．
+
+腕を磨けば以下のようにも書ける．
+\begin{align}
+	&\epsilon({\bf x}) = 
+		\left\{ 
+		\begin{array}{ll}
+			\epsilon_{\rm air} +\chi ( \epsilon_{\rm dm} -\epsilon_{\rm air} ) &{\bf x} \in  \Omega_{\rm design}\\
+			\epsilon_{\rm air} &{\bf x} \in \Omega_{\rm out} \\
+			\epsilon_{\rm dm} &{\bf x} \in \Omega_{\rm wg}\ _{,}
+		\end{array}
+	\right.  \nonumber
+\end{align}
+あとはGoogleで調べてくれ．
+
+%==================================================
+\chapter{図の挿入方法}\label{how_to_insert_figures}
+%==================================================
+
+\section{準備するものとソフトウェア}
+図は基本的にepsファイルが必要である．
+pdfを載せる荒技もあるが，bbboxの設定などが必要であり，初心者には難しい．
+epsファイルの作成はかなりの数のフリーソフトが出回っているので，それらをうまく利用すること．
+Macの場合，スケッチ風ドロー\cite{Sketch_fu_Draw_URL}，ImageMagick\cite{ImageMagick_URL}，Xpdf\cite{Xpdf_URL}などが有名であり，
+各ソフトウェアにより得意不得意があるため，うまく使い分けること．
+Powerpointなどでつくる図をepsにするにはスケッチ風ドローが有効であり，
+png，jpgなどをepsにすることはImageMagick (コマンドは convert hoge.png hoge.eps )が得意としており，
+pdfをepsに変換するにはXpdf  (コマンドは pdftops -eps hoge.pdf ) が良い（藤井評）．
+金があるならば，Adobe illustrator\cite{illustrator_URL}を購入しても良いかも．
+一応，体験版はあるようだ．
+
+\section{図を挿入}
+hoge.epsというepsファイルを図としてtexに挿入する際は以下のように書く．
+図のタイトルは「hogeを赤い円で囲んでみた」とし，図の幅を5cmとした．
+\begin{verbatim}
+	\begin{figure}[h]%[htbp]
+	\begin{center}
+	\includegraphics[width=5cm]{hoge.eps}
+	\caption{hogeを赤い円で囲んでみた}
+	\label{Figure_hoge}
+	\end{center}
+	\end{figure}
+\end{verbatim}
+
+\newpage
+
+そうすると，このように図の挿入ができる．
+\begin{figure}[h]%[htbp]
+	\begin{center}
+		\includegraphics[width=5cm]{hoge_c.eps}
+		\caption{hogeを赤い円で囲んでみた}
+		\label{Figure_hoge}
+	\end{center}
+\end{figure}
+
+\subsection{図の位置}
+\verb+\begin{figure}[h]+ \\ \\
+ここで，[htbp]はh : here，t : top，b : bottom，p :しらん，で図のページ内での配置を指定できる．
+あとはtexが美しいであろう位置に勝手に移動してくれる．
+なお，どうしてもここに固定したいという場合は[!h]などと，htbpの前に!をつけてやれば良い．
+
+\subsection{図番号の引用}
+\verb+\label{Figure_hoge}+\\ \\
+図の番号を引用したい場合は　\verb+図\ref{Figure_hoge}+　と書くと　図\ref{Figure_hoge}　と引用できる．
+なお，\verb+\ref{ }+のカッコの中は引用したい図の\verb+\label{ }+のカッコのなかと揃えて，他の図と重複があってはいけない．
+
+\subsection{図のタイトル}
+\verb+\caption{hogeを赤い円で囲んでみた}+\\ \\
+好きに書け．
+
+%==================================================
+\chapter{テーブルの書き方}\label{how_to_write_references}
+%==================================================
+
+\begin{table}[htb]
+\centering
+\caption{\label{Geometry} Model parameters.}
+\begin{tabular}{l|p{1.5in}|lp{2in}}
+\hline 
+Parameter & Symbol & Value \\ \hline
+	Radius of cylinders & $a$ & 1 : characteristic length\\
+	Filling factor & $f$ & 0.3\ (30\%)\\
+	Radius of $\rm C_{in}$ & $R_{\rm in}$ & 1.5$a$ \\
+	Radius of $\rm C_{g}$ & $R_{\rm g}$ & 39$a$ \\
+	Radius of $\rm C_{out}$ & $R_{\rm out}$ & 40$a$ \\
+	TMFP & $l=a\left( \sqrt{ 2 \pi / \sqrt{3}f}-2\right)$ & $1.47735a$\\ %=$  \\
+	Periodic length &\ & $3.47735a$ ($=l+2a$)\\ %=$ \\
+	Position of center & $(x_0,y_0)$ & $(0,0)$\\
+	Width of PML &\  & 3$a$\\
+	Width of whole model &\ & 93$a$\\
+	The number of cylinders &\ & 432\\
+\hline
+\end{tabular}
+\end{table}
+
+\begin{tabular}{c|r|r}
+\hline
+項目A & 項目B & 項目C \\
+\hline
+項目1 & 項目2 & 項目3 \\
+項目4 & 項目5 & 項目6 \\
+\hline
+\end{tabular}
+
+%==================================================
+\chapter{参考文献の書き方}\label{how_to_write_references}
+%==================================================
+
+\section{bibtexの使用方法}
+bibtexは参考文献をリスト(例：./Style/FujiiLab.bib)にまとめておくと
+各学会などの書式（例：./Style/FujiiLab.bst）に合わせて参考文献を自動で出力してくれる
+すぐれものです．
+
+使用方法は
+texファイルの一番下の
+\begin{verbatim}
+	\bibliography{./Style/FujiiLab} }
+	\bibliographystyle{./Style/FujiiLab}
+\end{verbatim}
+
+でリストと書式を指定し，texshopの場合，
+texファイルをコンパイルする際，左上で\\
+1. LaTexでタイプセット\\
+2. BibTexでタイプセット\\
+3. LaTexでタイプセット\\
+4. LaTexでタイプセット\\
+で出てくるはずです．（'LaTexでタイプセット'は３回必要）
+
+%==================================================
+\chapter*{付録}
+%\section{xxx法の妥当性について}
+%==================================================
+
+ここには計算の詳細な導出を書いてください．
+
+%==================================================
+% Reference
+%==================================================
+
+\bibliography {./Style/FujiiLab}
+%\bibliographystyle{./Style/junsrt}
+\bibliographystyle{./Style/jIEEEtran.bst}
+%\bibliographystyle{./Style/FujiiLab}
+%\bibliographystyle{./Style/apsrev4-2ja}
+
+%\begin{thebibliography}{9}
+%	\bibitem{Ohtaka_PRB_1979}
+%	K. Ohtaka, “Energy band of photons and low-energy photon diffraction,” Phys. Rev. B \textbf{19}, 5057 (1979).
+%	\bibitem{Yablonovitch_PRL_1987}
+%	E. Yablonovitch, “Inhibited spontaneous emission in solid-state physics and electron- ics,” Phys. Rev. Lett. \textbf{58}, 2059 (1987).
+%	\bibitem{Takeda_PRL_2004}
+%	M. W. Takeda, S. Kirihara, Y. Miyamoto, K. Sakoda, and K. Honda, “Localization of electromagnetic waves in three-dimensional fractal cavities,” Phys. Rev. Lett. \textbf{92}, 093902 (2004).
+%	\bibitem{Fujii_OE_2012}
+%	G. Fujii, T. Matsumoto, T. Takahashi, and T. Ueta, “Study on transition from photonic- crystal laser to random laser,” Opt. Express \textbf{20}, 7300\UTF{2013}7315 (2012).
+%	\bibitem{Fujii_APL_2013}
+%	G. Fujii, H. Watanabe, T. Yamada, T. Ueta, and M. Mizuno, “Level set based topology optimization for optical cloaks,” Appl. Phys. Lett. \textbf{102}, 251106 (2013).
+%	\bibitem{Sakoda_Morikita_2004}
+%	迫田 和彰, フォトニック結晶入門 (森北出版, 2004).
+%\end{thebibliography}
+
+\end{document}

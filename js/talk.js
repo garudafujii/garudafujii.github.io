@@ -1,0 +1,36 @@
+document.write('<!--------------------------------------------------------------------------------------------------------------------------->');
+document.write('<div class="TalkSingle">');
+document.write('<!--------------------------------------------------------------------------------------------------------------------------->');
+document.write('	<div class="talkfig">');
+document.write('		<a href="' + urlconf + '">');
+document.write('			<img src="' + img + '" width="100%" alt="保存禁止" border="0">');
+document.write('		</a>');
+document.write('	</div>');
+document.write('	<div class="talkinfo">');
+document.write('		<span style="font-size:108%;font-family:Helvetica-Bold">' + title + '</span><br>');
+document.write('		<span style="font-size:100%;font-family:Times;font-style:Roman">' + author + '</span><br>');
+document.write('		<a href="' + urltalk + '" target="_blank">');
+document.write('			<span style="font-size:100%;font-family:Times;font-style:Italic"><font color="navy">' + conference + '</font></span> ');
+document.write('				<span style="font-size:100%;font-family:Times;font-style:Roman">[No. ' + talkno + ', ');
+document.write('					' + roomno + ', ');
+document.write('					' + session + ', ');
+document.write('					' + time + '].');
+document.write('				</span>');
+document.write('		</a>');
+document.write('	</div>');
+
+document.write('	<div class="ConferenceInfo">');
+document.write('		<div class="talkdate">');
+document.write('			' + date + ' <font face="Helvetica-Bold">' + year + '</font>');
+document.write('		</div>');
+document.write('		<div class="talkvenues">');
+document.write('			<a href="' + urlvenues + '">');
+document.write('				<!--Venues : <font face="Helvetica-Bold" color="black">' + venues + '</font>');
+document.write('				at <font face="Helvetica-Bold" color="black">' + city + '</font> (' + country + ')-->');
+document.write('				<font face="Helvetica-Bold" color="black">' + venues + '</font>');
+document.write('				(<font face="Helvetica-Bold" color="black">' + city + '</font>' + country + ')');
+document.write('			</a>');
+document.write('		</div>');
+document.write('	</div><!--ConferenceInfo-->');
+
+document.write('</div><!--TalkSingle-->');

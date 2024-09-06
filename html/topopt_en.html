@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+	<head>
+		
+		<!-- Google tag (gtag.js) -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=G-HVNGMYQK42"></script>
+		<script>
+		  window.dataLayer = window.dataLayer || [];
+		  function gtag(){dataLayer.push(arguments);}
+		  gtag('js', new Date());
+		
+		  gtag('config', 'G-HVNGMYQK42');
+		</script>
+		
+		<meta http-equiv="Content-Type" content="text/html; charset=shift_jis">
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+		<title>Garuda Fujii | Shinshu University</title>
+		<meta name="description" content="Simple Multi-Item Slider: Category slider with CSS animations" />
+		<meta name="keywords" content="topology optimization, topology optimisation, CMA-ES, level set method, invisible cloak" />
+		<meta name="author" content="Codrops" />
+		<link rel="shortcut icon" href="../favicon.ico"> 
+		
+		<link rel="stylesheet" type="text/css" href="../css/wide.css" />
+		<!--<link rel="stylesheet" media="(min-width: 640px)" type="text/css" href="../css/wide.css" />
+		<link rel="stylesheet" media="(max-width: 640px)" type="text/css" href="../css/smart.css" />-->
+		
+		<script src="../js/modernizr.custom.63321.js"></script>
+		
+		<script src="http://code.jquery.com/jquery-3.2.1.min.js"></script>
+	</head>
+	
+	<body oncontextmenu="return false;">
+		<script type="text/javascript">
+			var home = './index_en.html';
+			var publication = './publication_en.html';
+			var talk = './talk_en.html';
+			var media = './media_en.html';
+			var people = './people_en.html';
+			var grant = './grant_en.html';
+			var language = 'Japanese';
+			var link = './topopt.html';
+			var fig = '../img/home/Japanese.avif';
+		</script>
+<!--------------------------------------------------------------------------------------------------------------------------->
+		<script type="text/javascript" src="../js/header.js"></script>
+<!--------------------------------------------------------------------------------------------------------------------------->
+		
+		<div class="container">
+			
+			<div class="List_all">
+				<div class="Topic">
+				
+					<div class="top-info">
+						<nav>
+							<a href="#"><h4>What is topology optimization?
+							</h4></a>
+						</nav>
+					</div>
+				
+					<div class="Left_column" style="font-family:Times;font-size:100%;padding:1% 1% 1% 1%;line-height:180%;">
+						Topology optimization is one promising approach to enhance the performance of a device and 
+						has been applied to produce many devices in engineering. 
+						The structural topology can be changed during topology optimization to improve performance; 
+						the highest degree of design freedom in structural optimization can provide the highest performance. 
+						<br>&emsp;
+						However, apart from the freedom of the structure, topology optimization involves various difficulties for each problem.
+						For example, there are various problems such as multi-modal nature, where many local optimal solutions with insuficient performance exist, 
+						the curse of dimensionality, where the optimal solution cannot be obtained 
+						because the number of possible structures increases exponentially in a problem with a large number of design variables, 
+						and dependency between design variables, where relative changes in many design variables affect the objective function. 
+						<br>&emsp;
+						Our mission is to develop a topology optimization method that can solve these problems simultaneously.
+					</div><!-- Left_column -->
+
+					<div class="Right_column" style="padding:1% 1% 1% 1%;">
+						<img class="FigLeft" width="100%;" src="../img/research/topopt.png">
+					</div><!--RightColumn-->
+				</div><!--Topic-->
+			
+				<div class="Topic">
+				
+					<div class="top-info">
+						<nav>
+							<a href="#"><h4>Solving difficult properties
+							</h4></a>
+						</nav>
+					</div>
+				
+					<div class="Left_column" style="padding:1% 1% 1% 1%;display: inline-block;text-align:center;">
+						<img class="FigLeft" width="100%;" src="../img/research/CMA-ES/Rastrigin.png"><br><br><br>
+						<img class="FigLeft" width="80%;" src="../img/research/CMA-ES/CMAES_Rastrigin.gif">
+					</div><!-- Left_column -->
+
+					<div class="Right_column" style="font-family:Times;font-size:100%;padding:1% 1% 1% 1%;line-height:180%;">
+						Optimization problems range from simple convex functions to multimodal functions with many local optimal solutions. 
+						In topology optimization, the nature of the optimization problem varies greatly depending on the objective function to be minimized, 
+						the constraints, and the physical field under consideration.
+						<br>&emsp;
+						Topology optimization problems related to the control of waves, such as electromagnetic waves and sound waves, 
+						which have recently attracted attention due to the emergence of metamaterials and photonic and phononic crystals, 
+						are generally difficult structural design problems due to strong multimodality and dependence among design variables 
+						caused by scattering and interference inherent to waves. Our research aims to develop a topology optimization method 
+						that can solve such optimization problems that remain unsolved due to their difficult nature.
+					</div><!--RightColumn-->
+				</div><!--Topic-->
+						
+				<div class="Topic">
+				
+					<div class="top-info">
+						<nav>
+							<a href="#"><h4>Structural Modeling in Topology Optimization
+							</h4></a>
+						</nav>
+					</div>
+				
+					<div class="Left_column" style="font-family:Times;font-size:100%;padding:1% 1% 1% 1%;line-height:180%;">
+						Because topology optimization is an ill-posed problem, various structural modeling approaches have been proposed. 
+						The high degree of design freedom of topology optimization can create spatially infinitely small structures, 
+						requiring structural modeling and constraints to control them. 
+						<br>&emsp;
+						In these topology optimizations, the resulting optimal configurations may differ depending on the structural modeling method. 
+						The ease of fabrication also depends on the clarity around the contours of the optimized structure.
+						<br>&emsp;
+						In addition, by making structural modeling and spatial discretization (finite element size) independent of each other, 
+						high computational accuracy and low dimensionality can be achieved, which in turn leads to faster calculations.
+					</div><!-- Left_column -->
+					
+					<div class="Right_column" style="padding:1% 1% 1% 1%;margin: 0% 0% 20% 0%;">
+						<img class="FigLeft" width="110%" src="../img/research/SLSM/spectralLSM.gif">
+						<img class="FigLeft" width="81%"  style="margin-left:2%;" src="../img/research/SLSM/density.gif">
+					</div><!--RightColumn-->
+				</div><!--Topic-->
+				
+			</div><!--List_all-->
+			
+		</div><!-- /container -->
+		
+		
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+		<script src="js/jquery.catslider.js"></script>
+		<script>
+			$(function() {
+
+				$( '#mi-slider' ).catslider();
+
+			});
+		</script>
+		
+		
+	</body>
+</html>

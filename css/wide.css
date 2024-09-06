@@ -1,0 +1,937 @@
+
+@import url('slider.css');
+
+:root {
+	--base-width: 100vw;
+	--base-vmargin: 10%;
+	--base-hmargin: 5%;
+	--vmargin_thin: 0.5vw;
+	--hmargin_thin: 0.5vw;
+}
+
+/* ============================================= */
+/* Basic and Header Setting
+/* ============================================= */
+
+body {
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 0%;
+	font-family: 'Lato', Calibri, Arial, sans-serif;
+	background: #fff;
+	font-weight: 400;
+	font-size: 1.4vw;
+	color: #333;
+	/*overflow: scroll;
+	overflow-x: auto;*/
+}
+
+a {
+	color: #191970;
+	text-decoration: none;
+}
+
+.container {
+	position: static;
+	width: 80%;
+	background-position: center top;
+	background-color: white;
+    margin: 0% 10% 0% 10%;
+}
+
+.headerall {
+	position: static;
+	width: 80%;
+	margin: 4% 0% 0% 10%;
+}
+
+.logo {
+	position: static;
+	width: 8%;
+	float: left;
+	margin: -1% 2% 0% 0%;
+	display:inline;
+}
+
+.gfgroup {
+	position: static;
+	width: 100%;
+	margin: 0% 0% 0% 0%;
+	font-family: Helvetica-bold;
+	font-size: 180%;
+	display:inline;
+}
+
+.labname {
+	position: static;
+	width: 90%;
+	margin: 0% 0% 0% 1%;
+	font-family: Times;
+	font-size: 140%;
+	display:inline;
+}
+
+.language {
+	position: static;
+	float:right;
+	width: 5.0%;
+	margin: -2% 0% 0% 0%;
+	font-family: Helvetica-bold;
+	font-size: 60%;
+	text-align: center;
+}
+
+.languageimg {
+	width: 100%;
+}
+
+
+.slider {
+	position: static;
+	width: 100%;
+	margin: 0% 0% 0% 0%;
+}
+
+/* ============================================= */
+/* research slider
+/* ============================================= */
+
+.Mean_Compliance_nocopy{
+	background:url('../img/research/Mean_Compliance.gif');
+	width: 100%;
+	height: 100%;
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-position: left center;
+}
+
+.Invisibility_cloak_nocopy{
+	background:url('../img/research/Optical_cloak_CMA-ES/MFD.gif');
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+.Location_camouflage_nocopy{
+	background:url('../img/research/Location_camouflage/OL_Ez.gif'); 
+	/*background:url('../img/research/Location_camouflage/SPF.gif'); */
+	background-size: 90%;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+.Numerical_Analysis_nocopy{
+	background:url('../img/research/ToyEng.gif');
+	background-size:100%;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+/* ============================================= */
+/* Sponsers
+/* ============================================= */
+
+.sponsers {
+	position: static;
+	width: 100%;
+	margin: calc( var( --base-vmargin )*1.5 ) 0% 0% 0%;
+	display: inline-block;
+}
+
+.FigSponser {
+	margin: auto;
+	display: inline-block;
+	margin: var( --vmargin_thin ) var( --hmargin_thin ) 0% var( --hmargin_thin );
+}
+
+/* ============================================= */
+/* Welcome to our website
+/* ============================================= */
+
+.frontmessage {
+	position: static;
+	width: 60%;
+	margin: var( --base-vmargin ) 0% 0% 0%;
+	display: inline-block;
+}
+
+.welcome {
+	position: static;
+	width: 100%;
+	height: auto;
+	margin: var( --vmargin_thin ) var( --hmargin_thin ) 0% var( --hmargin_thin );
+	line-height: 180%;
+	font-size: 85%;
+	font-family: "Times";
+}
+
+.messagepicture {
+	position: static;
+}
+
+/* ============================================= */
+/* Comp Mech Lab
+/* ============================================= */
+
+.Laboratory {
+	position: static;
+	display: inline-block;
+	vertical-align: top;
+	margin: var( --base-vmargin ) 0% 0% 8%;
+	padding: 0% 0% 0% 0%;
+	box-shadow: 0 10px 25px 0 rgba(0, 0, 0, .5);
+}
+
+.subcontents {
+	position: static;
+	width: 100%;
+	margin: 0% 0% 10% 0%;
+	background-color: white;
+	padding: 5% 0% 0% 0%;
+}
+
+.FigCenter {
+	border-radius:50%;
+	margin: auto;
+	display: block;
+}
+
+.subdiscription {
+	position: static;
+	width: 90%;
+	margin: 0% 5% 0% 5%;
+}
+
+.textcenter {
+	text-align: center;
+	font-size: 100%;
+	font-family: Helvetica;
+	line-height: 100%;
+	margin: 5% 0% 0% 0%;
+}
+
+.textcentersmall {
+	text-align: center;
+	font-size: 80%;
+	font-family: Helvetica;
+	color: gray;
+	line-height: 100%;
+	margin: 2% 0% 10% 0%;
+}
+
+.Helvetica {
+	font-size: 90%;
+	font-family: Helvetica;
+	line-height: 150%;
+}
+
+/* ============================================= */
+/* Highlight & NEWS
+/* ============================================= */
+
+.info {
+	position: static;
+	display: flex;
+	height: auto;
+	width: 100%;
+	margin: var( --base-vmargin ) 0% 0% 0%;
+}
+
+.3rdRow {
+	position: static;
+	display: flex;
+	height: auto;
+	width: 100%;
+	margin: var( --base-vmargin ) 0% 0% 0%;
+}
+
+/* ============================================= */
+/* Highlight */
+/* ============================================= */
+
+.highlight {
+	position: static;
+	width: 49%;
+	margin: 0% var( --hmargin_thin ) 0% 0%;
+}
+
+.highlightpaperinfo {
+	position: static;
+	width: 98%;
+	height: 50vw;
+	margin: var( --vmargin_thin ) var( --hmargin_thin ) 0% var( --hmargin_thin );
+	overflow: hidden;
+	overflow-y: scroll;
+}
+
+.PaperSingle {
+	position: static;
+	width: 100%;
+	margin: 0% 0% 5% 0%;
+}
+
+.OurPaper {
+	position: static;
+	width: 100%;
+}
+
+.paperfig {
+	width: 17%;
+	margin: 0% 1% 0% 0%;
+	display: inline-block;
+}
+
+.paperinfo {
+	width: 80%;
+	line-height: 115%;
+	margin: 0% 0% 0% 0%;
+	font-size: 80%;
+	vertical-align: top;
+	display: inline-block;
+}
+
+.JournalPower {
+	position: static;
+	width: 100%;
+	margin: 0% 0% 0% 0%;
+}
+
+.paperIF {
+	position: static;
+	width: 17%;
+	float:left;
+	margin: 0% 2% 0% 0%;
+	line-height: 120%;
+	font-family: "Helvetica";
+	font-size: 73%;
+	vertical-align: top;
+	display: inline-block;
+}
+
+.paperh5index {
+	position: static;
+	width: 81%;
+	margin: -0.3% 0% 0% 0%;
+	line-height: 120%;
+	font-family: "Helvetica";
+	font-size: 75%;
+	vertical-align: top;
+	display: inline-block;
+}
+
+/* ============================================= */
+/* NEWS */
+/* ============================================= */
+
+.news {
+	position: static;
+	width: 49%;
+	height: auto;
+	margin: 0% 0% 0% var( --hmargin_thin );
+}
+
+.newsinfo {
+	position: static;
+	margin: var( --vmargin_thin ) var( --hmargin_thin ) 0% var( --hmargin_thin );
+	height: 50vw;
+	width: 98%;
+	overflow-y: scroll;
+	font-size: calc( var(--base-width)*0.013 );
+	font-family: "Times";
+}
+
+/* ============================================= */
+/* Welcome to our website
+/* ============================================= */
+
+.ForStudent {
+	position: static;
+	width: 49%;
+	margin: var( --base-vmargin ) var( --hmargin_thin ) 0% 0%;
+	display: inline-block;
+}
+
+.message {
+	position: static;
+	width: 100%;
+	height: auto;
+	margin: var( --vmargin_thin ) var( --hmargin_thin ) 0% var( --hmargin_thin );
+	line-height: 180%;
+	font-size: 85%;
+	font-family: "Times";
+}
+
+.messagepicture {
+	position: static;
+}
+
+/* ============================================= */
+/* Welcome to our website
+/* ============================================= */
+
+.StudentAchievement {
+	position: static;
+	width: 49%;
+	margin: var( --base-vmargin ) 0%  0% var( --hmargin_thin );
+}
+
+.StudentAchievementinfo {
+	position: static;
+	width: 98%;
+	height: 35vw;
+	margin: var( --vmargin_thin ) var( --hmargin_thin ) 0% var( --hmargin_thin );
+}
+
+.studentSingle {
+	position: static;
+	width: 100%;
+	margin: 0% 0% 5% 0%;
+}
+
+.studenthighlight {
+	position: static;
+	display: inline-block;
+	width: 100%;
+	vertical-align: top;
+	margin: 0% 0% 0% 0%;
+}
+
+.studentfig {
+	width: 23%;
+	float:left;
+	line-height: 100%;
+	margin: 0% 2% 0% 0%;
+}
+
+.studentinfo {
+	width: 75%;
+	margin: 0% 0% 0% 25%;
+	font-size: 100%;
+	line-height:110%;
+}
+
+.studentinfo h3 {
+	font-size: 3%;
+	font-family:Helvetica;
+}
+
+.studentConferenceInfo {
+	position: static;
+	width: 100%;
+	margin: 2% 0% 2% 0%;
+}
+
+
+.studenttalkdate {
+	position: static;
+	width: 28%;
+	float:left;
+	margin: 0% 1% 0% 0%;
+	line-height: 120%;
+	font-family: "Helvetica";
+	font-size: 75%;
+	vertical-align: top;
+	display: inline-block;
+}
+
+.studenttalkvenues {
+	position: static;
+	width: 70%;
+	margin: 0% 0% 0% 0%;
+	line-height: 120%;
+	font-family: "Helvetica";
+	font-size: 75%;
+	vertical-align: top;
+	display: inline-block;
+}
+
+
+/* ============================================= */
+/* frontpicture
+/* ============================================= */
+
+.frontpicture {
+	position: static;
+	background:url('../img/home/Nagano1.png');
+	background-size:100vw;
+	width: 100vw;
+	height: 28vw;
+	left: 0%;
+	right: 0%;
+	background-repeat: no-repeat;
+	background-position: center center;
+	margin: calc( var( --base-vmargin )*1.5 ) 0% 0% 0%;
+}
+
+/* ============================================= */
+/* List
+/* ============================================= */
+
+.List_all {
+	width: 100%;
+	margin: 10% 0% 0% 0%;
+}
+
+.Topic {
+	width: 100%;
+	margin: 10% 0% 20% 0%;
+}
+	
+.Left_column {
+	position: static;
+	width: 49%;
+	margin: 0% 1% 0% 0%;
+	vertical-align: top;
+	display: inline-block;
+}
+
+.Right_column {
+	position: static;
+	width: 49%;
+	margin: 0% 0% 0% 0%;
+	vertical-align: top;
+	display: inline-block;
+}
+
+/* ============================================= */
+/* Publication.html
+/* ============================================= */
+
+
+.JournalInfo {
+	position: static;
+	width: 98%;
+	margin: var( --vmargin_thin ) var( --hmargin_thin ) 0% var( --hmargin_thin );
+	vertical-align: top;
+}
+
+.Link_Citation {
+	display: none;
+	position: static;
+	width: 50%;
+	margin: 15% 0% 0% 25%;
+	padding: 5% 5% 5% 5%;
+	box-shadow: 0 10px 25px 0 rgba(0, 0, 0, .5);
+	border-radius: 50%;
+	text-align: center;
+}
+
+.Link_Info {
+	position: static;
+	width: 98%;
+	margin: var( --vmargin_thin ) var( --hmargin_thin ) 0% var( --hmargin_thin );
+}
+
+.Review {
+	position: static;
+	width: 100%;
+	margin: 0% 0% 0% 0%;
+}
+
+.ReviewInfo {
+	position: static;
+	width: 98%;
+	margin: var( --vmargin_thin ) var( --hmargin_thin ) 0% var( --hmargin_thin );
+	vertical-align: top;
+}
+
+.Proceeding {
+	position: static;
+	width: 100%;
+	margin: 25% 0% 0% 0%;
+}
+
+.ProceedingInfo {
+	position: static;
+	width: 98%;
+	margin: var( --vmargin_thin ) var( --hmargin_thin ) 0% var( --hmargin_thin );
+	vertical-align: top;
+}
+
+.ProceedingSingle {
+	position: static;
+	width: 100%;
+	margin: 0% 0% 5% 0%;
+}
+
+/* ============================================= */
+/* talk.html
+/* ============================================= */
+
+.TalkSingle {
+	position: static;
+	width: 100%;
+	margin: 0% 0% 10% 0%;
+}
+
+.InvitedTalk {
+	position: static;
+	width: 100%;
+	margin: 0% 0% 0% 0%;
+}
+
+.DomesticConference {
+	position: static;
+	width: 100%;
+	margin: 20% 0% 0% 0%;
+}
+
+.InternationalConference {
+	position: static;
+	width: 100%;
+	margin: 0% 0% 0% 0%;
+}
+
+.InvitedTalkInfo {
+	position: static;
+	width: 98%;
+	margin: var( --vmargin_thin ) var( --hmargin_thin ) 0% var( --hmargin_thin );
+}
+
+.DomesticConferenceInfo {
+	position: static;
+	width: 98%;
+	margin: var( --vmargin_thin ) var( --hmargin_thin ) 0% var( --hmargin_thin );
+}
+
+.InternationalConferenceInfo {
+	position: static;
+	width: 98%;
+	margin: var( --vmargin_thin ) var( --hmargin_thin ) 0% var( --hmargin_thin );
+}
+
+.talkfig {
+	width: 17%;
+	margin: 0% 1% 0% 0%;
+	display: inline-block;
+}
+
+.talkinfo {
+	width: 81%;
+	line-height: 115%;
+	margin: 0% 0% 0% 0%;
+	font-size: 80%;
+	vertical-align: top;
+	display: inline-block;
+}
+
+.ConferenceInfo {
+	position: static;
+	width: 100%;
+	margin: 0% 0% 2% 0%;
+}
+
+.talkdate {
+	position: static;
+	width: 17%;
+	float:left;
+	margin: 0% 1% 0% 0%;
+	line-height: 120%;
+	font-family: "Helvetica";
+	font-size: 75%;
+	vertical-align: top;
+	display: inline-block;
+}
+
+.talkvenues {
+	position: static;
+	width: 81%;
+	margin: 0% 0% 0% 0%;
+	line-height: 120%;
+	font-family: "Helvetica";
+	font-size: 75%;
+	vertical-align: top;
+	display: inline-block;
+}
+
+/* ============================================= */
+/* grant.html
+/* ============================================= */
+
+.Grant_Single {
+	position: static;
+	width: 100%;
+	margin: 1% 0% 5% 0%;
+}
+
+.KakenPI {
+	position: static;
+	width: 100%;
+	margin: 0% 0% 0% 0%;
+}
+
+.KakenCoInvestigator {
+	position: static;
+	width: 100%;
+	margin: 20% 0% 0% 0%;
+}
+
+.ZaidanPI {
+	position: static;
+	width: 100%;
+	margin: 0% 0% 0% 0%;
+}
+
+.GrantsAffiliation {
+	position: static;
+	width: 98%;
+	margin: var( --vmargin_thin ) var( --hmargin_thin ) 0% var( --hmargin_thin );
+	margin: 20% 0% 0% 0%;
+}
+
+.OtherGrants {
+	position: static;
+	width: 98%;
+	margin: var( --vmargin_thin ) var( --hmargin_thin ) 0% var( --hmargin_thin );
+	margin: 20% 0% 20% 0%;
+}
+
+.KakenPIInfo {
+	position: static;
+	width: 98%;
+	margin: var( --vmargin_thin ) var( --hmargin_thin ) 0% var( --hmargin_thin );
+}
+
+.KakenCoInvestigatorInfo {
+	position: static;
+	width: 98%;
+	margin: var( --vmargin_thin ) var( --hmargin_thin ) 0% var( --hmargin_thin );
+}
+
+.ZaidanPIInfo {
+	position: static;
+	width: 98%;
+	margin: var( --vmargin_thin ) var( --hmargin_thin ) 0% var( --hmargin_thin );
+}
+
+.GrantsAffiliationInfo {
+	position: static;
+	width: 98%;
+	margin: var( --vmargin_thin ) var( --hmargin_thin ) 0% var( --hmargin_thin );
+}
+
+.OtherGrantsInfo {
+	position: static;
+	width: 98%;
+	margin: var( --vmargin_thin ) var( --hmargin_thin ) 0% var( --hmargin_thin );
+}
+
+.GrantFig {
+	width: 17%;
+	margin: 0% 1% 0% 0%;
+	display: inline-block;
+}
+
+.GrantInfo {
+	width: 81%;
+	line-height: 115%;
+	margin: 0% 0% 0% 0%;
+	font-size: 75%;
+	vertical-align: top;
+	display: inline-block;
+}
+
+.GrantPower {
+	position: static;
+	width: 100%;
+	margin: 0% 0% 2% 0%;
+}
+
+.GrantNo {
+	position: static;
+	width: 17%;
+	float:left;
+	margin: 0% 1% 0% 0%;
+	line-height: 120%;
+	font-family: "Helvetica";
+	font-size: 75%;
+	vertical-align: top;
+	display: inline-block;
+}
+
+.GrantPeriod {
+	position: static;
+	width: 81%;
+	margin: 0% 0% 0% 0%;
+	line-height: 120%;
+	font-family: "Helvetica";
+	font-size: 75%;
+	vertical-align: top;
+	display: inline-block;
+}
+
+.Progress {
+	position: static;
+	width: 100%;
+	margin: 0% 0% 2% 0%;
+}
+
+/* ============================================= */
+/* media.html
+/* ============================================= */
+
+.ScienceNEWS {
+	position: static;
+	width: 98%;
+	margin: var( --vmargin_thin ) var( --hmargin_thin ) 20% var( --hmargin_thin );
+}
+
+.FigLeft {
+	position: static;
+}
+
+.ContentsNEWS {
+	position: static;
+	font-size: 80%;
+	line-height: 120%;
+	margin: 1% 0% 1% 1%;
+}
+
+.WebSite {
+	position: static;
+	display: inline-block;
+	vertical-align: top;
+	margin: calc( var( --base-vmargin )*1.0 ) 0% 0% 0%;
+	padding: 0% 0% 0% 0%;
+	box-shadow: 0 10px 25px 0 rgba(0, 0, 0, .5);
+}
+
+.websubcontents {
+	position: static;
+	width: 100%;
+	margin: 0% 0% 10% 0%;
+	background-color: white;
+	padding: 5% 0% 0% 0%;
+}
+
+.webFigCenter {
+	border-radius:50%;
+	margin: auto;
+	display: block;
+}
+
+.MITwebFigCenter {
+	/*border-radius:100%;*/
+	margin: auto;
+	display: block;
+}
+
+.websubdiscription {
+	position: static;
+	width: 90%;
+	margin: 0% 5% 0% 5%;
+}
+
+.webtextcenter {
+	text-align: center;
+	font-size: 100%;
+	font-family: Helvetica;
+	line-height: 100%;
+	margin: 5% 0% 0% 0%;
+}
+
+.webtextcentersmall {
+	text-align: center;
+	font-size: 80%;
+	font-family: Helvetica;
+	color: gray;
+	line-height: 100%;
+	margin: 2% 0% 10% 0%;
+}
+
+/* ============================================= */
+/* people.html
+/* ============================================= */
+
+.maincontents {
+	position: static;
+	width: 100%;
+	margin: var( --vmargin_thin ) var( --hmargin_thin ) 0% var( --hmargin_thin );
+	font-size: 85%;
+	font-family: Helvetica;
+	line-height: 170%;
+}
+
+.inlineblockabout {
+	position: static;
+	display: inline-block;
+	width: 57%;
+	vertical-align: top;
+	margin: 0% 0% 0% 2%;
+}
+
+
+.year {
+	position: static;
+	width: 8%;
+	display: inline-block;
+	font-family:Helvetica;
+	vertical-align: top;
+	margin: 0% 0% 0% 0%;
+}
+
+.month {
+	position: static;
+	width: 5%;
+	display: inline-block;
+	font-family:Helvetica;
+	text-align: right;
+	vertical-align: top;
+	margin: 0% 0% 0% -1%;
+}
+
+.what {
+	position: static;
+	width: 81%;
+	display: inline-block;
+	font-family:Helvetica;
+	vertical-align: top;
+	margin: 0% 0% 0% 2%;
+}
+
+.Master {
+	position: static;
+	width: 7%;
+	display: inline-block;
+	font-family:Helvetica;
+	vertical-align: top;
+	margin: 0% 0% 10% 10%;
+}
+
+.Bachelor {
+	position: static;
+	width: 7%;
+	display: inline-block;
+	font-family:Helvetica;
+	vertical-align: top;
+	margin: 0% 0% 0% 10%;
+}
+
+a.figmouseover:hover {
+	 position: relative;
+	 text-decoration: none;
+}
+
+a.figmouseover span {
+	 display: none;
+	 position: absolute;
+	 top: 1em;
+	 left: 0;
+}
+
+ a.figmouseover:hover span {
+	border: none;
+	display: block;
+	float: right;
+	width: 1000%;
+	height: 200%;
+	margin: 0% 0% 0% 0%;
+}
+
+.Citation_Info {
+	position: static;
+	width: 98%;
+	margin: var( --vmargin_thin ) var( --hmargin_thin ) 0% var( --hmargin_thin );
+}
+

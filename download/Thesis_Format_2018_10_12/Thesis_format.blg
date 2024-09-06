@@ -1,0 +1,77 @@
+This is pBibTeX, Version 0.99d-j0.34 (utf8.euc) (TeX Live 2022)
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: Thesis_format.aux
+The style file: ./Style/jIEEEtran.bst.bst
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 150 items from 100.
+Reallocated singl_function (elt_size=4) to 200 items from 150.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 150 items from 100.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
+f is an unknown function---line 1777 of file ./Style/jIEEEtran.bst.bst
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 150 items from 100.
+Database file #1: ./Style/FujiiLab.bib
+-- jIEEEtran.bst 0.19 (2023/01/26) by Haruki Ejiri and Yoshi Ri.
+-- https://github.com/ehki/jIEEEtran/
+-- See the "IEEEtran_bst_HOWTO.pdf" manual for usage information for IEEEtran.bst.
+-- See also "howtouse.pdf" manual for usase information for jIEEEtran.bst and IEEJtran.bst.
+Name 1 in "O. Sigmund, and K. Maute" has a comma at the end for entry Sigmund_Springer_2004
+while executing---line 3191 of file ./Style/jIEEEtran.bst.bst
+Name 1 in "O. Sigmund, and K. Maute" has a comma at the end for entry Sigmund_Springer_2004
+while executing---line 3191 of file ./Style/jIEEEtran.bst.bst
+Name 1 in "O. Sigmund, and K. Maute" has a comma at the end for entry Sigmund_Springer_2004
+while executing---line 3191 of file ./Style/jIEEEtran.bst.bst
+
+Done.
+You've used 13 entries,
+            6257 wiz_defined-function locations,
+            1331 strings with 12437 characters,
+and the built_in function-call counts, 9782 in all, are:
+= -- 1671
+> -- 114
+< -- 10
++ -- 60
+- -- 26
+* -- 252
+:= -- 1141
+add.period$ -- 20
+call.type$ -- 13
+change.case$ -- 28
+chr.to.int$ -- 30
+cite$ -- 13
+duplicate$ -- 617
+empty$ -- 588
+format.name$ -- 83
+if$ -- 2636
+int.to.chr$ -- 0
+int.to.str$ -- 13
+missing$ -- 103
+newline$ -- 63
+num.names$ -- 13
+pop$ -- 347
+preamble$ -- 2
+purify$ -- 3
+quote$ -- 4
+skip$ -- 1233
+stack$ -- 0
+substring$ -- 130
+swap$ -- 348
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 6
+type$ -- 13
+warning$ -- 0
+while$ -- 21
+width$ -- 15
+write$ -- 132
+is.kanji.str$ -- 34
+(There were 4 error messages)
